@@ -199,17 +199,17 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 | **Storage Temperature** | -20 ℃ ~ 70 ℃ |
 | **Operating Voltage** | 3.3 V |
 
-# Hardware Wiring Instructions
+## Hardware Wiring Instructions
 
 **All modules plug directly into dedicated connectors on the expansion board.**
 
 **Notice**: Different manufacturers may assign ESP32‑S3 board pins differently. Always refer to the silkscreen and official documentation for your specific board!
 
-## Wiring Diagram
+### Wiring Diagram
 
 ![Img](media/max.png)
 
-## Microphone Interface
+### Microphone Interface
 
 | **ESP32‑S3 Development Board** | **ICS‑43432 Microphone (I²S Interface)** |
 | --- | --- |
@@ -221,7 +221,7 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ---
 
-## Power‑Amplifier Interface
+### Power‑Amplifier Interface
 
 | **ESP32‑S3 Development Board** | **NS4168 Digital Power Amplifier** |
 | --- | --- |
@@ -233,7 +233,7 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ---
 
-## LCD Screen Interface
+### LCD Screen Interface
 
 | **ESP32‑S3 Development Board** | **1.54‑inch IPS Color LCD** |
 | --- | --- |
@@ -248,7 +248,7 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ---
 
-## Assembly Flowchart
+### Assembly Flowchart
 
 
 
@@ -270,12 +270,12 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ---
 
-# Firmware Flashing
+## Firmware Flashing
 
 Two flashing methods are available: **Web‑based Online Flashing** and **Offline Download‑Tool Flashing**. Online flashing is recommended for simplicity and speed.
 
 ---
-## Method 1: Web‑based Online Flashing
+### Method 1: Web‑based Online Flashing
 This method flashes firmware directly from a web browser without installing extra software.
 
 **1. Pre‑requisites**
@@ -303,28 +303,28 @@ After successful flashing, press the `RST` button on the board to reboot the dev
 
 ---
 
-## Method 2: Flash Download Tool (No ESP‑IDF Environment Required)
+### Method 2: Flash Download Tool (No ESP‑IDF Environment Required)
 
 **Important**: This procedure applies to **ESP32‑S3** firmware. Make sure you obtain the correct firmware binary.
 
 Download link for flashing‑tool package
 
-![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](flash‑tool.rar)
+![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](FirmwareArchive.rar)
 
-### 1. Preparation
+#### 1. Preparation
 - **Operating System**: Windows example; **Flash Download Tool version 3.9.7 or newer** is recommended.
 - **Obtain Tool**: Download from [Espressif official website](https://www.espressif.com/en/support/download/other-tools), unzip to any folder; no installation required.
 - **Launch**: Open extracted folder and double‑click `flash_download_tool_3.9.7.exe`.
 
 ![](media/c4eb59624e7b7369322db8ea9b73693.png)
 
-### 2. Download Firmware
+#### 2. Download Firmware
 
 Download link for firmware archive
 
 ![](media/67e3d89096b079957270155a1bb9f545.png) [**Firmware Archive**](KS5033-EN-v1.5.5_bread-compact-wifi-LCD-7P-240x240 .bin)
 
-### 3. Flash Firmware onto Development Board
+#### 3. Flash Firmware onto Development Board
 
 Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
@@ -349,7 +349,7 @@ Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
 ---
 
-## After‑Flashing
+### After‑Flashing
 
 Press the `RST` button on the board after flashing completes. The device enters **Wi‑Fi provisioning mode**.
 
@@ -357,26 +357,18 @@ Press the `RST` button on the board after flashing completes. The device enters 
 
 ---
 
-# How to Configure Device Wi‑Fi
+## How to Configure Device Wi‑Fi
 
-## Flashing Completed
+### 1. Wi-Fi Network Configuration
 
-After flashing, press the `RST` button on the development board to restart. The device will enter **Wi-Fi configuration mode**.
-
----
-
-# How to Configure Device Wi-Fi
-
-## 1. Wi-Fi Network Configuration
-
-### 1) Start Device
+#### 1) Start Device
 - After flashing firmware and rebooting, the device enters configuration mode.
 
-### 2) Configuration Status
+#### 2) Configuration Status
 - **sRGB LED blue blinking:** Indicates the device is in Wi-Fi configuration mode.  
 - If the device is not in configuration mode, press and hold the **BOOT (or IO0)** button for a few seconds, or power cycle to enter configuration mode.
 
-### 3) Configuration Steps
+#### 3) Configuration Steps
 1.  **Connect to "Xiao Zhi" Wi-Fi**  
     Use your phone or computer to search for Wi-Fi and connect to the device’s hotspot (usually named *Xiaozhi-XXXXXX*).  
     ![Img](media/img-20250419111300.png)
@@ -390,7 +382,7 @@ After flashing, press the `RST` button on the development board to restart. The 
 
 ---
 
-## 2. About the sRGB LED on the Device
+### 2. About the sRGB LED on the Device
 
 1.  **Connection and Update Status**  
     -   **Blue flashing:** Device is in Wi-Fi configuration mode.  
@@ -406,7 +398,7 @@ After flashing, press the `RST` button on the development board to restart. The 
 
 ---
 
-## 3. How to Add a Device
+### 3. How to Add a Device
 
 1. **Confirm Device Is Online**  
    - Once connected to the network, the device will announce a 6-digit verification code (can be retrieved by waking it up again).
@@ -449,16 +441,16 @@ Restart the Xiao Zhi AI Chatbot and start chatting!
 
 ## FAQ‑Common Troubleshooting
 
-1. **No speaker sound, microphone no input or LCD remains blank**
-‑ Confirm battery‑holder power switch is ON and power supply is stable. Check that modules are firmly inserted into correct dedicated ports (speaker, microphone, screen) with correct orientation.
+1. **No sound from speaker, microphone does not capture / LCD stays blank**
+    - Confirm battery‑holder power switch is ON and power supply is stable. Check that modules are firmly inserted into correct dedicated ports (speaker, microphone, screen) with correct orientation.
 
 2. **Device reboots frequently or fails to boot**
-‑ Low battery voltage may cause unstable power rails. Replace with fresh AA batteries when using battery‑holder power; verify correct battery polarity.
+    - Low battery voltage may cause unstable power rails. Replace with fresh AA batteries when using battery‑holder power; verify correct battery polarity.
 
 3. **XiaoZhi hotspot cannot be found during Wi‑Fi setup**
-‑ Confirm firmware flashed correctly. Press `RST` to reboot. If provisioning does not trigger automatically, long‑press `BOOT` button for several seconds to force provisioning‑mode entry.
+    - Confirm firmware flashed correctly. Press `RST` to reboot. If provisioning does not trigger automatically, long‑press `BOOT` button for several seconds to force provisioning‑mode entry.
 
 4. **Firmware‑flash failure, cannot connect to board**
-‑ Verify you are using a data‑capable Type‑C cable (not charge‑only). Confirm serial driver installation. If problems persist: hold `BOOT`, press‑and‑release `RST`, release `BOOT` to enter download mode and retry flashing.
+    - Verify you are using a data‑capable Type‑C cable (not charge‑only). Confirm serial driver installation. If problems persist: hold `BOOT`, press‑and‑release `RST`, release `BOOT` to enter download mode and retry flashing.
 
 > **Tip**: All functional modules connect via unified expansion‑board ports. Double‑check modules are fully seated. If issues remain, confirm firmware version matches your hardware configuration.

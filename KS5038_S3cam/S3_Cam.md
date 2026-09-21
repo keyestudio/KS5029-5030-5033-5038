@@ -179,17 +179,17 @@ The 1.54‑inch IPS color LCD is a high‑performance display module for embedde
 | **Operating Voltage** | 3.3 V |
 
 
-# Hardware Wiring Instructions
+## Hardware Wiring Instructions
 
 All modules plug directly into dedicated connectors on the expansion board.
 
 **Notice**: Different manufacturers may assign ESP32‑S3 board pins differently. Always refer to the silkscreen and official documentation for your specific board.
 
-## Wiring Diagram
+### Wiring Diagram
 
 ![Img](media/max.png)
 
-## Microphone Wiring (ICS‑43432 I²S Microphone)
+### Microphone Wiring (ICS‑43432 I²S Microphone)
 | ESP32‑S3‑Cam Mainboard | ICS‑43432 Microphone |
 | --- | --- |
 | GPIO **1** | **WS** (Word Select) |
@@ -200,7 +200,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 
 ---
 
-## Digital Power Amplifier Wiring (NS4168)
+### Digital Power Amplifier Wiring (NS4168)
 | ESP32‑S3‑Cam Mainboard | NS4168 Digital Amplifier |
 | --- | --- |
 | GPIO **39** | **DOUT** (Digital Audio Output) |
@@ -211,7 +211,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 
 ---
 
-## LCD Screen Wiring
+### LCD Screen Wiring
 
 | ESP32‑S3‑Cam Mainboard | 1.54‑inch IPS LCD |
 | --- | --- |
@@ -227,7 +227,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 ---
 
 
-## Assembly Flow
+### Assembly Flow
 
 The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard, no manual wiring required. Ensure metal contact surfaces face down when inserting the cable, then lock the FPC latch.
 
@@ -251,12 +251,12 @@ The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard
 
 ---
 
-# Firmware Flashing
+## Firmware Flashing
 
 Two flashing methods are available: **Web‑based Online Flashing** and **Offline Download‑Tool Flashing**. Online flashing is recommended for simplicity.
 
 ---
-## Method 1: Web‑based Online Flashing
+### Method 1: Web‑based Online Flashing
 No software installation required; flash firmware directly from a web browser.
 
 **Pre‑requisites**
@@ -287,27 +287,27 @@ Press the **RST** reset button to reboot the board and enter Wi‑Fi provisionin
 
 ---
 
-## Method 2: Flash Download Tool (No ESP‑IDF Environment Required)
+### Method 2: Flash Download Tool (No ESP‑IDF Environment Required)
 
 **Important**: This procedure applies to the ESP32‑S3‑Cam firmware. Make sure you use the correct firmware binary for this board.
 
 Download link for flashing‑tool package
 
-![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](flash‑tool.rar)
+![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](FirmwareArchive.rar)
 
-### 1. Preparation
+#### 1. Preparation
 - **Operating System**: Windows recommended. Use Flash Download Tool version 3.9.7 or newer.
 - **Tool Source**: Download from the [Espressif official website](https://www.espressif.com/en/support/download/other-tools). No installation required; unzip and run.
 
 ![](media/c4eb59624e7b7369322db8ea9b73693.png)
 
-### 2. Download Firmware
+#### 2. Download Firmware
 
 Download link for firmware archive
 
 ![](media/67e3d89096b079957270155a1bb9f545-17895299192681.png) [**Firmware Archive**](s3cam-3660.bin)
 
-### 3. Flash Firmware onto Development Board
+#### 3. Flash Firmware onto Development Board
 
 Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
@@ -332,24 +332,24 @@ Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
 ---
 
-## Flashing Completed
+### Flashing Completed
 
 After flashing, press the `RST` button on the development board to restart. The device will enter **Wi-Fi configuration mode**.
 
 ---
 
-# How to Configure Device Wi-Fi
+## How to Configure Device Wi-Fi
 
-## 1. Wi-Fi Network Configuration
+### 1. Wi-Fi Network Configuration
 
-### 1) Start Device
+#### 1) Start Device
 - After flashing firmware and rebooting, the device enters configuration mode.
 
-### 2) Configuration Status
+#### 2) Configuration Status
 - **sRGB LED blue blinking:** Indicates the device is in Wi-Fi configuration mode.  
 - If the device is not in configuration mode, press and hold the **BOOT (or IO0)** button for a few seconds, or power cycle to enter configuration mode.
 
-### 3) Configuration Steps
+#### 3) Configuration Steps
 1.  **Connect to "Xiao Zhi" Wi-Fi**  
     Use your phone or computer to search for Wi-Fi and connect to the device’s hotspot (usually named *Xiaozhi-XXXXXX*).  
     ![Img](media/img-20250419111300.png)
@@ -363,7 +363,7 @@ After flashing, press the `RST` button on the development board to restart. The 
 
 ---
 
-## 2. About the sRGB LED on the Device
+### 2. About the sRGB LED on the Device
 
 1.  **Connection and Update Status**  
     -   **Blue flashing:** Device is in Wi-Fi configuration mode.  
@@ -379,7 +379,7 @@ After flashing, press the `RST` button on the development board to restart. The 
 
 ---
 
-## 3. How to Add a Device
+### 3. How to Add a Device
 
 1. **Confirm Device Is Online**  
    - Once connected to the network, the device will announce a 6-digit verification code (can be retrieved by waking it up again).
@@ -423,15 +423,15 @@ Restart the Xiao Zhi AI Chatbot and start chatting!
 ## FAQ – Common Troubleshooting
 
 1. **No sound from speaker / microphone does not capture / LCD stays blank**
-    - Confirm power switch is turned on and power supply is stable. Verify modules are firmly inserted into the correct expansion‑board connectors with correct orientation.
+    - Confirm battery‑holder power switch is ON and power supply is stable. Check that modules are firmly inserted into correct dedicated ports (speaker, microphone, screen) with correct orientation.
 
 2. **Device reboots frequently or fails to boot**
     - Low battery voltage is a common cause. Replace with fresh AA batteries if using battery‑holder power. Check battery polarity.
 
-3. **Cannot find the XiaoZhi Wi‑Fi hotspot**
-    - Confirm firmware flashed correctly. Press RST to reboot. If provisioning does not trigger automatically, long‑press BOOT button for several seconds to force provisioning‑mode entry.
+3. **XiaoZhi hotspot cannot be found during Wi‑Fi setup**
+    - Confirm firmware flashed correctly. Press `RST` to reboot. If provisioning does not trigger automatically, long‑press `BOOT` button for several seconds to force provisioning‑mode entry.
 
 4. **Firmware‑flash failure / cannot connect to board**
-    - Verify you are using a data‑capable USB‑C cable (not charge‑only). Confirm CH340 serial driver installation. If issues persist: hold BOOT, press‑and‑release RST, release BOOT to enter download mode and retry flashing.
+    - Verify you are using a data‑capable Type‑C cable (not charge‑only). Confirm serial driver installation. If problems persist: hold `BOOT`, press‑and‑release `RST`, release `BOOT` to enter download mode and retry flashing.
 
-> **Tip**: All functional modules plug into dedicated ports on the expansion board. Double‑check firmware matches your hardware variant if problems persist.
+> **Tip**: All functional modules connect via unified expansion‑board ports. Double‑check modules are fully seated. If issues remain, confirm firmware version matches your hardware configuration.
