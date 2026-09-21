@@ -264,7 +264,7 @@ No software installation required; flash firmware directly from a web browser.
 - **USB Cable**: Must be a data‑capable USB‑C cable (charge‑only cables will not work).
 
 **Flashing Steps**
-1.  **Access the Flashing Page:** Open the online flashing URL in your browser: **https://flash.keyestudio.com/**  
+1.  **Access the Flashing Page:** Open the online flashing URL in your browser: [**https://flash.keyestudio.com/**](https://flash.keyestudio.com/)
 
 ![Img](media/KE0195.png)
 

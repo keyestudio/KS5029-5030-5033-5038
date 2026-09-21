@@ -257,7 +257,7 @@ This method flashes firmware directly from a web browser without installing extr
 
 **2. Flashing Steps**
 
-1.  **Open Web‑Flasher Page**: Visit:https://flash.keyestudio.com/
+1.  **Open Web‑Flasher Page**: Visit: [**https://flash.keyestudio.com/**](https://flash.keyestudio.com/)
 
 ![Img](media/KE0197.png)
 
