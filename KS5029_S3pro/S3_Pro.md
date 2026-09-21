@@ -1,6 +1,6 @@
 # KS5029 Ready‑to‑Use ESP32‑S3‑Pro XiaoZhi AI Chatbot DIY Kit (Advanced Version with 1.54‑inch LCD Screen)
 
-![Img](./media/KE0197.JPG)
+![Img](./media/KE0197.jpg)
 
 ## Introduction
 Built with modular hardware and local speech‑recognition technology, this is the “XiaoZhi AI Chatbot” interactive kit. It features an ESP32‑S3 main controller, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker. It supports voice input and real‑time audio broadcast for basic human‑machine interaction. The mainboard follows Arduino‑UNO‑compatible pinout, and integrates additional practical functions: current‑sensing measurement, SD‑card mounting, USB‑OTG and programmable RGB LEDs, convenient for data logging and peripheral expansion. A battery holder and USB cable are included. It powers‑on immediately with external power and can run untethered with batteries installed.
@@ -230,23 +230,19 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ### Assembly Flowchart
 
+![Img](media/ks5029_03.png)
 
+![Img](media/ks5029_04.png)
 
-![Img](media/KS5029_03.png)
+![Img](media/ks5029_06.png)
 
-![Img](media/KS5029_04.png)
+![Img](media/ks5029_07.png)
 
+![Img](media/ks5029_08.png)
 
+![Img](media/ks5029_09.png)
 
-![Img](media/KS5029_06.png)
-
-![Img](media/KS5029_07.png)
-
-![Img](media/KS5029_08.png)
-
-![Img](media/KS5029_09.png)
-
-![Img](media/KS5029_01.png)
+![Img](media/ks5029_01.png)
 
 ## Firmware Flashing
 

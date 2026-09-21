@@ -231,23 +231,23 @@ All modules plug directly into dedicated connectors on the expansion board.
 
 The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard, no manual wiring required. Ensure metal contact surfaces face down when inserting the cable, then lock the FPC latch.
 
-![Img](media/KS5038_03.png)
+![Img](media/ks5038_03.png)
 
-![Img](media/KS5038_04.png)
+![Img](media/ks5038_04.png)
 
-![Img](media/KS5038_05.png)
+![Img](media/ks5038_05.png)
 
-![Img](media/KS5038_06.png)
+![Img](media/ks5038_06.png)
 
-![Img](media/KS5038_07.png)
+![Img](media/ks5038_07.png)
 
-![Img](media/KS5038_08.png)
+![Img](media/ks5038_08.png)
 
 
 
-![Img](media/KS5038_10.png)
+![Img](media/ks5038_10.png)
 
-![Img](media/KS5038_01.png)
+![Img](media/ks5038_01.png)
 
 ---
 

@@ -1,6 +1,6 @@
 # KS5033 Ready‑to‑Use ESP32‑S3‑Mini XiaoZhi AI Chatbot DIY Kit (Basic Version with 1.54‑inch LCD Screen)
 
-![Img](./media/KE0196.JPG)
+![Img](./media/KE0196.jpg)
 
 ## Introduction
 Based on modular hardware and local speech‑recognition technology, this kit builds the "XiaoZhi AI Chatbot" interactive solution. Equipped with an ESP32‑S3 main controller, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker, it supports voice input and real‑time audio broadcast to implement basic human‑machine interaction. A battery holder and USB cable are included. It powers‑on immediately with external power and can run untethered with batteries installed.
@@ -250,23 +250,19 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ### Assembly Flowchart
 
+![Img](media/ks5033_03.png)
 
+![Img](media/ks5033_04.png)
 
-![Img](media/KS5033_03.png)
+![Img](media/ks5033_06.png)
 
-![Img](media/KS5033_04.png)
+![Img](media/ks5033_07.png)
 
+![Img](media/ks5033_08.png)
 
+![Img](media/ks5033_09.png)
 
-![Img](media/KS5033_06.png)
-
-![Img](media/KS5033_07.png)
-
-![Img](media/KS5033_08.png)
-
-![Img](media/KS5033_09.png)
-
-![Img](media/KS5033_01.png)
+![Img](media/ks5033_01.png)
 
 ---
 
@@ -322,7 +318,7 @@ Download link for flashing‑tool package
 
 Download link for firmware archive
 
-![](media/67e3d89096b079957270155a1bb9f545.png) [**Firmware Archive**](KS5033-EN-v1.5.5_bread-compact-wifi-LCD-7P-240x240 .bin)
+![](media/67e3d89096b079957270155a1bb9f545.png) [**Firmware Archive**](KS5033-EN-v1.5.5_bread-compact-wifi-LCD-7P-240x240.bin)
 
 #### 3. Flash Firmware onto Development Board
 

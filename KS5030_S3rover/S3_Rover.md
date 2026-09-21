@@ -27,7 +27,7 @@ Built with modular hardware and local speech‑recognition technology, this is t
 
 ### 1. S3 AI Rover Development Board
 
-![Img](media/MB0196.JPG)
+![Img](media/MB0196.jpg)
 
 The S3 AI Rover mainboard is built around the ESP32‑S3‑WROOM‑1‑N16R8 module, featuring 16 MB Flash and 8 MB PSRAM. It incorporates a mature power‑supply scheme, dual DRV8835 four‑channel motor drivers, and rich peripheral interfaces including I2S audio, dual screen ports (SPI and I2C), ultrasonic sensor and servo expansion headers. It fits many development scenarios such as AI voice‑controlled cars, Wi‑Fi remote‑controlled robots and educational programmable chassis. Reset and BOOT buttons are provided for debugging and network provisioning.
 
@@ -228,17 +228,15 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ### Assembly Flowchart
 
+![Img](media/ks5030_03.png)
 
+![Img](media/ks5030_04.png)
 
-![Img](media/KS5030_03.png)
+![Img](media/ks5030_05.png)
 
-![Img](media/KS5030_04.png)
+![Img](media/ks5030_06.png)
 
-![Img](media/KS5030_05.png)
-
-![Img](media/KS5030_06.png)
-
-![Img](media/KS5030_01.png)
+![Img](media/ks5030_01.png)
 
 ## Firmware Flashing
 
