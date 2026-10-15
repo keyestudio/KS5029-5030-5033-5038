@@ -121,7 +121,7 @@ This module uses the NS4168 chip: a high‑efficiency, low‑noise integrated Cl
 
 > **Note**: Allow adequate cooling space. Match loudspeaker impedance (4Ω or 8Ω recommended). Set appropriate gain to avoid distortion or chip damage.
 
-### 5. Enclosed‑Cavity Loudspeaker (8Ω 2 W )
+### 5. Enclosed‑Cavity Loudspeaker (8Ω 3 W )
 
 ![Img](media/img-20250409131458.png)
 
@@ -129,7 +129,7 @@ This module uses the NS4168 chip: a high‑efficiency, low‑noise integrated Cl
 This speaker works inside a partial‑ or fully‑enclosed cavity to improve low‑frequency response and acoustic energy focusing, widely used in portable smart‑audio devices.
 
 #### Features
-1. **Impedance‑Power Matching**: 8Ω impedance, 2 W rated power for small amplifiers.
+1. **Impedance‑Power Matching**: 8Ω impedance, 3 W rated power for small amplifiers.
 2. **Improved Low‑Frequency Response**: Cavity design enhances bass performance.
 3. **Compact Mechanical Design**: Mount via screws, snaps or adhesive tape.
 
@@ -138,7 +138,7 @@ This speaker works inside a partial‑ or fully‑enclosed cavity to improve low
 | Parameter          | Value / Range       | Remarks                              |
 |---------------|-------------------|-----------------------------------|
 | **Impedance**      | 8Ω           | Matches small‑form‑factor amplifiers              |
-| **Rated Power**  | 2 W              | For normal‑volume playback                      |
+| **Rated Power**  | 3W             | For normal‑volume playback                      |
 | **Frequency Response**  | ~200 Hz ~ 20 kHz     | Cavity‑optimized mid‑low frequency response                |
 | **Sensitivity**    | 80‑90 dB (@1 W/1 m)  | High acoustic efficiency              |
 | **Mounting Method**  | Screws / snaps / adhesive tape    | Depends on physical variant                    |
