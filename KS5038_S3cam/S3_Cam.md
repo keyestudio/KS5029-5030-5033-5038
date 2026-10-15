@@ -264,7 +264,7 @@ No software installation required; flash firmware directly from a web browser.
 - **USB Cable**: Must be a data‑capable USB‑C cable (charge‑only cables will not work).
 
 **Flashing Steps**
-1.  **Access the Flashing Page:** Open the online flashing URL in your browser: [**https://flash.keyestudio.com/**](https://flash.keyestudio.com/)
+1.  **Access the Flashing Page:** Open the online flashing URL in your browser: **https://flash.keyestudio.com/**  
 
 ![Img](media/KE0195.png)
 
@@ -297,7 +297,7 @@ Download link for flashing‑tool package
 
 #### 1. Preparation
 - **Operating System**: Windows recommended. Use Flash Download Tool version 3.9.7 or newer.
-- **Tool Source**: Download from the [Espressif official website](https://www.espressif.com/en/support/download/other-tools). No installation required; unzip and run.
+- **Launch**: Open extracted folder and double‑click `flash_download_tool_3.9.7.exe`.
 
 ![](media/c4eb59624e7b7369322db8ea9b73693.png)
 

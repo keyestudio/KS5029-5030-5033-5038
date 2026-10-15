@@ -251,7 +251,7 @@ This method flashes firmware directly from a web browser without installing extr
 
 **2. Flashing Steps**
 
-1.  **Access the Flashing Page:** Open the online flashing URL in your browser: [**https://flash.keyestudio.com/**](https://flash.keyestudio.com/)
+1.  **Access the Flashing Page:** Open the online flashing URL in your browser: **https://flash.keyestudio.com/**  
 
 ![Img](media/KE0198.png)
 
@@ -278,7 +278,6 @@ Download link for flashing‑tool package
 
 #### 1. Preparation
 - **Operating System**: Windows example; **Flash Download Tool version 3.9.7 or newer** is recommended.
-- **Obtain Tool**: Download from [Espressif official website](https://www.espressif.com/en/support/download/other-tools), unzip to any folder; no installation required.
 - **Launch**: Open extracted folder and double‑click `flash_download_tool_3.9.7.exe`.
 
 ![](media/image-20260920081725042.png)
