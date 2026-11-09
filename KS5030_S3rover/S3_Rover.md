@@ -3,15 +3,15 @@
 ![Img](./media/KE0198.jpg)
 
 ## Introduction
-Built with modular hardware and local speech‑recognition technology, this is the “XiaoZhi AI Chatbot” interactive kit. It features an ESP32‑S3 main controller, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker. It supports voice input and real‑time audio broadcast for basic human‑machine interaction. A battery holder and USB cable are included. It powers‑on immediately with external power and can run untethered with batteries installed. Furthermore, the board integrates four‑channel motor drivers, dual screen interfaces and abundant peripheral expansion resources. It can be flexibly adapted for advanced development projects such as AI voice‑controlled cars and Wi‑Fi remote‑controlled robots, balancing beginner‑friendly experience with room for technical growth.
+Built with modular hardware and Wi‑Fi cloud‑based AI voice dialogue, this is the “XiaoZhi AI Chatbot” interactive kit. It features an ESP32‑S3 main controller, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker. It supports voice input and real‑time audio broadcast for basic human‑machine interaction. A battery holder and USB cable are included. It powers‑on immediately with external power and can run untethered with batteries installed. Furthermore, the board integrates four‑channel motor drivers, dual screen interfaces and abundant peripheral expansion resources. It can be flexibly adapted for advanced development projects such as AI voice‑controlled cars and Wi‑Fi remote‑controlled robots, balancing beginner‑friendly experience with room for technical growth.
 
 ## Key Features
 - **Multi‑function Mainboard for Advanced Projects**: On‑board motor drivers, dual screen interfaces and rich peripheral pins enable easy upgrade from chatbot to AI car or remote‑controlled robot.
-- **High‑Integration, Ready‑to‑Run**: Mainboard and functional modules are pre‑mounted on an acrylic frame. Simple wiring completes assembly; no soldering or breadboard jumper wires required.
+- **High‑Integration, Ready‑to‑Run**: Mainboard and functional modules are pre‑mounted on an acrylic frame. Simple wiring with the included Dupont wires completes assembly; no soldering required.
 - **Voice Input**: Built‑in MEMS digital microphone (ICS‑43432) effectively suppresses ambient‑noise interference.
 - **Audio Output**: Digital power amplifier (NS4168) plus enclosed‑cavity loudspeaker delivers clear voice playback.
-- **Expandable**: The expansion board breaks out extra GPIO, I²C and other interfaces via XH connectors for adding more sensors or functional modules to the robot.
-- **Portable**: Supports battery‑holder power supply (6‑9 V) for untethered mobile operation without USB cable.
+- **Expandable**: The mainboard breaks out extra GPIO, I²C and other interfaces via XH connectors for adding more sensors or functional modules to the robot.
+- **Portable**: Supports battery‑holder power supply (7–12V) for untethered mobile operation without USB cable.
 - **Education‑Friendly**: Hands‑on assembly and debugging help users understand basic principles of AI speech recognition and audio playback.
 
 ## Bill of Materials
@@ -22,6 +22,10 @@ Built with modular hardware and local speech‑recognition technology, this is t
 | Display Screen                    | 1.54‑inch TFT LCD, ST7789 driver, 240×240                    | Displays status and conversation content                     | ![Img](./media/LCD.png)                |
 | Type‑C USB Cable                  | USB2.0 Type‑C, white, 1 m                                    | Connects development board to PC for firmware flashing and debugging | ![Img](./media/usb.png)                |
 | Dupont Wires                      | 5‑pin female‑to‑female, 100 mm                               | Inter‑module wiring between modules and mainboard            | ![Img](./media/19700363.png)           |
+
+**Semi-finished assembly includes main board, microphone, power amplifier, speaker and battery holder.Please bring your own 6 AA batteries.**
+
+Note: The mainboard has built‑in motor drivers, but this kit does not include motors, wheels, or motor‑driver tutorials. These need to be purchased separately for further development.
 
 ## Hardware Introduction
 
@@ -145,43 +149,41 @@ This speaker works inside a closed or semi‑closed cavity to optimize low‑fre
 
 > **Note**: Pair with a suitable digital amplifier and calibrate volume to prevent overload‑caused distortion or hardware damage.
 
-### 5. 1.54‑inch IPS Color LCD Module
+### 5. 1.54‑inch TFT Color LCD Module
 
 ![Img](media/LCD.png)
 
 #### Introduction
-The 1.54‑inch IPS color LCD module is a high‑performance display unit for various electronic projects and products. Adopting advanced IPS technology, it delivers rich colors and sharp visuals for scenarios requiring high visibility. Its compact footprint and simple interface make it well‑suited for embedded development and portable devices.
+The 1.54‑inch TFT color LCD module is a high‑performance display unit for various electronic projects and products. Adopting advanced IPS technology, it delivers rich colors and sharp visuals for scenarios requiring high visibility. Its compact footprint and simple interface make it well‑suited for embedded development and portable devices.
 
 #### Features
 - **High Resolution**: 240 × 240‑pixel resolution delivers sharp, detailed visuals.
 - **Rich Color Depth**: Supports RGB 65 K color display for vivid, lifelike images.
 - **Wide‑View‑Angle IPS Panel**: IPS technology provides ultra‑wide viewing angles while maintaining good image quality at oblique viewing positions.
 - **Simple Interface**: Uses 4‑wire SPI serial bus and requires few GPIO pins.
-- **Broad Compatibility**: Rich sample code for STM32, C51, MSP430 simplifies development and integration.
 
 #### Product Parameters
 
 | Item | Parameter |
 | --- | --- |
 | **Display Colors** | RGB 65 K color |
-| **SKU** | MSP1541 |
-| **Screen Size** | 1.54 inch |
-| **Panel Technology** | TFT |
-| **Driver IC** | ST7789 |
-| **Resolution** | 240 × 240 pixels |
-| **Display Interface** | 4‑line SPI interface |
-| **Active Display Area (AA Region)** | 27.72 mm × 27.72 mm |
-| **Touch‑Screen Type** | No touch screen |
-| **Touch IC** | None |
-| **Module PCB Base Dimensions** | 32.00 mm × 43.72 mm |
-| **Viewing Angle** | Full‑angle |
-| **Operating Temperature** | -10 ℃ ~ 60 ℃ |
-| **Storage Temperature** | -20 ℃ ~ 70 ℃ |
-| **Operating Voltage** | 3.3 V |
+| **Screen Size**                     | 1.54 inch            |
+| **Panel Technology**                | TFT                  |
+| **Driver IC**                       | ST7789               |
+| **Resolution**                      | 240 × 240 pixels     |
+| **Display Interface**               | 4‑line SPI interface |
+| **Active Display Area (AA Region)** | 27.72 mm × 27.72 mm  |
+| **Touch‑Screen Type**               | No touch screen      |
+| **Touch IC**                        | None                 |
+| **Module PCB Base Dimensions**      | 32.00 mm × 43.72 mm  |
+| **Viewing Angle**                   | Full‑angle           |
+| **Operating Temperature**           | -10 ℃ ~ 60 ℃         |
+| **Storage Temperature**             | -20 ℃ ~ 70 ℃         |
+| **Operating Voltage**               | 3 .3V–5V             |
 
 ## Hardware Wiring Instructions
 
-**All modules plug directly into dedicated connectors on the expansion board.**
+**Connect each module to the board with the included 5‑pin Dupont wires, following the tables below.**
 
 **Notice**: Different manufacturers may assign ESP32‑S3 board pins differently. Always refer to the silkscreen and official documentation for your specific board!
 
@@ -215,7 +217,7 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 
 ### LCD Screen Interface
 
-| **ESP32‑S3 Development Board** | **1.54‑inch IPS Color LCD** |
+| **ESP32‑S3 Development Board** | **1.54‑inch TFT Color LCD** |
 | --- | --- |
 | GPIO **21** | **SCL** (SPI Clock Signal) |
 | GPIO **47** | **SDA** (SPI Data Signal) |
@@ -239,6 +241,8 @@ The 1.54‑inch IPS color LCD module is a high‑performance display unit for va
 ![Img](media/ks5030_01.png)
 
 ## Firmware Flashing
+
+> **Note**: The firmware is only suitable for the mainboard described in this document. It is not compatible with other mainboards.
 
 Two flashing methods are available: **Web‑based Online Flashing** and **Offline Download‑Tool Flashing**. Online flashing is recommended for simplicity and speed.
 
@@ -273,7 +277,7 @@ After successful flashing, press the `RST` button on the board to reboot the dev
 
 Download link for flashing‑tool package
 
-![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](FirmwareArchive.rar)
+![](media/67e3d89096b079957270155a1bb9f545.png)  [tool.zip](tool.zip) 
 
 
 #### 1. Preparation
@@ -289,8 +293,6 @@ Download link for firmware archive
 ![](media/67e3d89096b079957270155a1bb9f545.png) [**Firmware Archive**](KS5030-EN-v1.5.5_bread-compact-wifi-LCD-7P-240x240.bin)
 
 #### 3. Flash Firmware onto Development Board
-
-Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
 **1) Download Configuration**
 
@@ -325,7 +327,7 @@ Press the `RST` button on the board after flashing completes. The device enters 
 - After flashing firmware and rebooting, the device enters configuration mode.
 
 #### 2) Configuration Status
-- **sRGB LED blue blinking:** Indicates the device is in Wi-Fi configuration mode.  
+- **Screen shows "WiFi config":** The device is in Wi-Fi configuration mode. After the network is connected successfully, the screen shows "Standby" after a short while.
 - If the device is not in configuration mode, press and hold the **BOOT (or IO0)** button for a few seconds, or power cycle to enter configuration mode.
 
 #### 3) Configuration Steps
@@ -336,29 +338,13 @@ Press the `RST` button on the board after flashing completes. The device enters 
 2.  **Configure Network**  
     After connecting, the phone typically auto-displays the configuration page. If not, open a browser and navigate to `http://192.168.4.1`.  
     ![Img](media/img-20250419112718.png)  
-    > - Select your 2.4G Wi-Fi network (5G is not supported).  
+    > - Select your 2.4G Wi-Fi network (5 GHz is not supported).  
     > - Enter the Wi-Fi password and click **Connect**.  
     > - If the connection succeeds, the interface shows “Done,” and the device will reboot and connect to your Wi-Fi.
 
 ---
 
-### 2. About the sRGB LED on the Device
-
-1.  **Connection and Update Status**  
-    -   **Blue flashing:** Device is in Wi-Fi configuration mode.  
-    -   **Blue steady:** OTA firmware update in progress.  
-    -   **Green flashing:** Wi-Fi connected successfully, waiting for wake-up.  
-    -   **Blue light during voice wake-up:** Connecting to server.  
-    -   **Green steady:** Playing voice.  
-    -   **Red steady:** Recording audio.
-
-2.  **sRGB LED Does Not Light**  
-    -   Check if the development board power supply is normal.  
-    -   Some boards may require additional soldering or jumper shorting to enable onboard sRGB LED, please check your board manual.
-
----
-
-### 3. How to Add a Device
+### 2. How to Add a Device
 
 1. **Confirm Device Is Online**  
    - Once connected to the network, the device will announce a 6-digit verification code (can be retrieved by waking it up again).
@@ -381,11 +367,11 @@ After changing the language, click **console** to enter the control panel.
    - Click “Add New Device.”  
    
    ![Img](media/img-20250419141027.png)  
-   Enter the 6-digit **Device ID**.  
+   Enter the 6-digit **verification code**.  
 
    ![Img](media/img-20250419141114.png)  
 
-   **Where to get the Device ID:** After firmware upload and network setup succeed, the device will announce this six-digit code automatically.
+   **Where to get the verification code:** After firmware upload and network setup succeed, the device will announce this six-digit code automatically.
 
 4. **Activation Successful**  
    - The device will activate automatically and appear in the “Device Management” page. Click **Configure Role** to open the configuration interface.  
@@ -398,6 +384,10 @@ After changing the language, click **console** to enter the control panel.
    ![Img](media/img-20250419142053.png)
 
 Restart the Xiao Zhi AI Chatbot and start chatting!
+
+• After the screen displays "standby", press the "boot" button on the mainboard to wake it up and start a conversation.
+• To interrupt an ongoing conversation, press the "boot" button.
+• To reconfigure Wi‑Fi, reflash the firmware.
 
 ## FAQ‑Common Troubleshooting
 

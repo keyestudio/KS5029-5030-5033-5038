@@ -3,11 +3,11 @@
 ![Img](media/KE0195.jpg)
 
 ## Introduction
-Based on modular hardware and local speech recognition technology, this kit builds the "XiaoZhi AI Chatbot" interactive solution. It is equipped with an ESP32‑S3 main controller, camera, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker. It supports voice input and real‑time audio broadcast, and adds visual recognition capability for richer AI interaction experiences. A battery holder and USB cable are included. It can run immediately with external USB power, and supports portable operation with batteries installed.
+Based on modular hardware and Wi‑Fi cloud‑based AI voice dialogue, this kit builds the "XiaoZhi AI Chatbot" interactive solution. It is equipped with an ESP32‑S3 main controller, camera, MEMS digital microphone (ICS‑43432), digital power amplifier (NS4168), 1.54‑inch color LCD screen and loudspeaker. It supports voice input and real‑time audio broadcast, and adds visual recognition capability for richer AI interaction experiences. A battery holder and USB cable are included. It can run immediately with external USB power, and supports portable operation with batteries installed.
 
 ## Key Features
 - **Vision Enhancement**: Integrated camera module gives the robot "eyes" for image recognition, monitoring and other scenarios.
-- **High‑Integration, Ready‑to‑Run**: Mainboard, expansion board and functional modules are pre‑mounted on an acrylic frame. Simple wiring completes assembly; no soldering or breadboard jumper wires required.
+- **High‑Integration, Ready‑to‑Run**: Mainboard, expansion board and functional modules are pre‑mounted on an acrylic frame. Simple wiring with the included Dupont wires completes assembly; no soldering required.
 - **Voice Input**: Built‑in MEMS digital microphone (ICS‑43432) effectively suppresses ambient noise.
 - **Audio Output**: Digital power amplifier (NS4168) plus enclosed loudspeaker delivers clear voice playback.
 - **Expandable**: The expansion board exposes extra GPIO, I²C and other interfaces via 2.54mm pin headers for connecting additional sensors and modules.
@@ -24,6 +24,7 @@ Based on modular hardware and local speech recognition technology, this kit buil
 | Type‑C USB Cable                  | USB2.0 Type‑C, 1 m                                           | Connect board to PC for firmware flashing and debugging      | ![Img](./media/usb.png)                |
 | Dupont Wires                      | 5‑pin female‑to‑female, 100 mm                               | Inter‑module wiring                                          | ![Img](./media/19700349.png)           |
 
+**Semi-finished assembly includes microphone, power amplifier, speaker and battery holder.Please bring your own 6 AA batteries.**
 
 ### 1. ESP32‑S3‑Cam Development Board
 
@@ -147,41 +148,43 @@ This speaker works inside a partial‑ or fully‑enclosed cavity to improve low
 
 ---
 
-### 6. 1.54‑inch IPS Color LCD Module
+### 6. 1.54‑inch TFT Color LCD Module
 
 ![Img](media/LCD.png)
 
 #### Introduction
-The 1.54‑inch IPS color LCD is a high‑performance display module for embedded and portable projects. IPS panel technology delivers rich colors and excellent viewing‑angle performance.
+The 1.54‑inch TFT color LCD is a high‑performance display module for embedded and portable projects. IPS panel technology delivers rich colors and excellent viewing‑angle performance.
 
 #### Features
 - **High Resolution**: 240 × 240 pixels for sharp visual output.
 - **Rich Color Depth**: 65 K RGB color display.
 - **Wide‑View‑Angle IPS Panel**: Consistent image quality across large viewing angles.
 - **Simple 4‑Wire SPI Interface**: Requires minimal GPIO resources.
-- **Broad Platform Compatibility**: Example code for STM32, C51, MSP430 available.
 - **Robust Manufacturing Standards**: Reliable long‑term operation.
 
 #### Product Parameters
 
-| Item | Parameter |
-| --- | --- |
-| **Display Colors** | RGB 65 K color |
-| **SKU** | MSP1541 |
-| **Screen Size** | 1.54 inch |
-| **Panel Technology** | TFT |
-| **Driver IC** | ST7789 |
-| **Resolution** | 240 × 240 pixels |
-| **Interface** | 4‑line SPI |
-| **Active Display Area** | 27.72 mm × 27.72 mm |
-| **PCB Module Dimensions** | 32.00 mm × 43.72 mm |
-| **Viewing Angle** | Full‑angle |
-| **Operating Voltage** | 3.3 V |
+| Item                                | Parameter            |
+| ----------------------------------- | -------------------- |
+| **Display Colors**                  | RGB 65 K color       |
+| **Screen Size**                     | 1.54 inch            |
+| **Panel Technology**                | TFT                  |
+| **Driver IC**                       | ST7789               |
+| **Resolution**                      | 240 × 240 pixels     |
+| **Display Interface**               | 4‑line SPI interface |
+| **Active Display Area (AA Region)** | 27.72 mm × 27.72 mm  |
+| **Touch‑Screen Type**               | No touch screen      |
+| **Touch IC**                        | None                 |
+| **Module PCB Base Dimensions**      | 32.00 mm × 43.72 mm  |
+| **Viewing Angle**                   | Full‑angle           |
+| **Operating Temperature**           | -10 ℃ ~ 60 ℃         |
+| **Storage Temperature**             | -20 ℃ ~ 70 ℃         |
+| **Operating Voltage**               | 3 .3V–5V             |
 
 
 ## Hardware Wiring Instructions
 
-All modules plug directly into dedicated connectors on the expansion board.
+Connect each module to the board with the included 5‑pin Dupont wires, following the tables below.
 
 **Notice**: Different manufacturers may assign ESP32‑S3 board pins differently. Always refer to the silkscreen and official documentation for your specific board.
 
@@ -190,7 +193,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 ![Img](media/max.png)
 
 ### Microphone Wiring (ICS‑43432 I²S Microphone)
-| ESP32‑S3‑Cam Mainboard | ICS‑43432 Microphone |
+| Expansion Board | ICS‑43432 Microphone |
 | --- | --- |
 | GPIO **1** | **WS** (Word Select) |
 | GPIO **2** | **SCK** (Bit Clock) |
@@ -201,7 +204,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 ---
 
 ### Digital Power Amplifier Wiring (NS4168)
-| ESP32‑S3‑Cam Mainboard | NS4168 Digital Amplifier |
+| Expansion Board | NS4168 Digital Amplifier |
 | --- | --- |
 | GPIO **39** | **DOUT** (Digital Audio Output) |
 | GPIO **40** | **BCLK** (Bit Clock) |
@@ -213,7 +216,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 
 ### LCD Screen Wiring
 
-| ESP32‑S3‑Cam Mainboard | 1.54‑inch IPS LCD |
+| Expansion Board | 1.54‑inch TFT LCD |
 | --- | --- |
 | GPIO **19** | **SCL** (SPI Clock) |
 | GPIO **20** | **SDA** (SPI MOSI Data) |
@@ -229,7 +232,7 @@ All modules plug directly into dedicated connectors on the expansion board.
 
 ### Assembly Flow
 
-The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard, no manual wiring required. Ensure metal contact surfaces face down when inserting the cable, then lock the FPC latch.
+The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard, no manual wiring required.
 
 ![Img](media/ks5038_03.png)
 
@@ -253,6 +256,8 @@ The camera connects via the 24‑pin FPC flat‑cable connector on the mainboard
 
 ## Firmware Flashing
 
+> **Note**: The firmware is only suitable for the mainboard described in this document. It is not compatible with other mainboards.
+
 Two flashing methods are available: **Web‑based Online Flashing** and **Offline Download‑Tool Flashing**. Online flashing is recommended for simplicity.
 
 ---
@@ -268,7 +273,7 @@ No software installation required; flash firmware directly from a web browser.
 
 ![Img](media/KE0195.png)
 
-2.  **Connect Hardware**: Select the KS5038 preset. Connect the ESP32‑S3‑Cam kit to your PC with a USB‑C cable. Install the CH340 serial driver if required by clicking “Download Driver” in the upper‑left corner of the webpage.
+2.  **Connect Hardware**: Select the KS5038 preset. Connect the ESP32‑S3‑Cam kit to your PC with a USB‑C cable.
 
 3.  **Connect Device in Browser**:
     -   Click **Connect Device** on the webpage.
@@ -293,7 +298,7 @@ Press the **RST** reset button to reboot the board and enter Wi‑Fi provisionin
 
 Download link for flashing‑tool package
 
-![](media/67e3d89096b079957270155a1bb9f545.png) [**Flash‑Tool Archive**](FirmwareArchive.rar)
+![](media/67e3d89096b079957270155a1bb9f545.png)  [tool.zip](tool.zip) 
 
 #### 1. Preparation
 - **Operating System**: Windows recommended. Use Flash Download Tool version 3.9.7 or newer.
@@ -308,8 +313,6 @@ Download link for firmware archive
 ![](media/67e3d89096b079957270155a1bb9f545-17895299192681.png) [**Firmware Archive**](s3cam-3660.bin)
 
 #### 3. Flash Firmware onto Development Board
-
-Unzip and open `flash_download_tool` folder, run `flash_download_tool.exe`.
 
 **1) Download Configuration**
 
@@ -357,7 +360,7 @@ After flashing, press the `RST` button on the development board to restart. The 
 2.  **Configure Network**  
     After connecting, the phone typically auto-displays the configuration page. If not, open a browser and navigate to `http://192.168.4.1`.  
     ![Img](media/img-20250419112718.png)  
-    > - Select your 2.4G Wi-Fi network (5G is not supported).  
+    > - Select your 2.4G Wi-Fi network (5 GHz is not supported).  
     > - Enter the Wi-Fi password and click **Connect**.  
     > - If the connection succeeds, the interface shows “Done,” and the device will reboot and connect to your Wi-Fi.
 
@@ -375,7 +378,6 @@ After flashing, press the `RST` button on the development board to restart. The 
 
 2.  **sRGB LED Does Not Light**  
     -   Check if the development board power supply is normal.  
-    -   Some boards may require additional soldering or jumper shorting to enable onboard sRGB LED, please check your board manual.
 
 ---
 
@@ -402,11 +404,11 @@ After changing the language, click **console** to enter the control panel.
    - Click “Add New Device.”  
    
    ![Img](media/img-20250419141027.png)  
-   Enter the 6-digit **Device ID**.  
+   Enter the 6-digit **verification code**.  
 
    ![Img](media/img-20250419141114.png)  
 
-   **Where to get the Device ID:** After firmware upload and network setup succeed, the device will announce this six-digit code automatically.
+   **Where to get the verification code:** After firmware upload and network setup succeed, the device will announce this six-digit code automatically.
 
 4. **Activation Successful**  
    - The device will activate automatically and appear in the “Device Management” page. Click **Configure Role** to open the configuration interface.  
@@ -419,6 +421,10 @@ After changing the language, click **console** to enter the control panel.
    ![Img](media/img-20250419142053.png)
 
 Restart the Xiao Zhi AI Chatbot and start chatting!
+
+• After the screen displays "standby", press the "boot" button on the mainboard to wake it up and start a conversation.
+• To interrupt an ongoing conversation, press the "boot" button.
+• To reconfigure Wi‑Fi, reflash the firmware.
 
 ## FAQ – Common Troubleshooting
 
@@ -435,3 +441,5 @@ Restart the Xiao Zhi AI Chatbot and start chatting!
     - Verify you are using a data‑capable Type‑C cable (not charge‑only). Confirm serial driver installation. If problems persist: hold `BOOT`, press‑and‑release `RST`, release `BOOT` to enter download mode and retry flashing.
 
 > **Tip**: All functional modules connect via unified expansion‑board ports. Double‑check modules are fully seated. If issues remain, confirm firmware version matches your hardware configuration.
+
+**Note**: After activation, press the `BOOT` button to enter conversation mode. Say "take a photo" to the device and it will capture an image for recognition.
